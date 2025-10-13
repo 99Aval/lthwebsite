@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="hero-section" style="display: flex; align-items: center; justify-content: center; margin-bottom: 40px; min-height: 340px; background: #f7f5e9; border-radius: 18px;">
+        <div class="hero-text" style="flex: 1; padding: 40px 30px;">
+            <h1 style="font-size: 2.2em; margin-bottom: 18px;">Welcome to DLG Ups</h1>
+            <p style="font-size: 1.15em;">
+                Your one-stop solution for all your UPS needs. Explore our services and find the best options for you.
+            </p>
+        </div>
+        <div class="hero-image" style="flex: 2; display: flex; justify-content: center;">
+            <img src="{% static 'images/hero-ups.jpg' %}" alt="UPS Backdrop" style="max-width: 90%; max-height: 320px; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); object-fit: cover;">
+        </div>
+    </div>
+
+    <!-- UPS Rows: Each row contains 3 UPS blocks -->
+    <div class="ups-rows">
+        <!-- Row Block Start -->
+        <div class="ups-row" style="display: flex; gap: 32px; justify-content: center; margin-bottom: 40px;">
+            <div class="ups-card fade-in">
+                <img src="{% static 'images/ups1.jpg' %}" alt="UPS 1" class="ups-img">
+                <div class="ups-details">
+                    <div class="ups-name"><strong>APC Back-UPS 600VA</strong></div>
+                    <div class="ups-price"><strong>₹4,999</strong></div>
+                    <ul class="ups-desc">
+                        <li>600VA/330W</li>
+                        <li>6 battery backup outlets</li>
+                        <li>Automatic Voltage Regulation</li>
+                        <li>2-year warranty</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ups-card fade-in">
+                <img src="{% static 'images/ups2.jpg' %}" alt="UPS 2" class="ups-img">
+                <div class="ups-details">
+                    <div class="ups-name"><strong>Microtek 1000VA UPS</strong></div>
+                    <div class="ups-price"><strong>₹6,499</strong></div>
+                    <ul class="ups-desc">
+                        <li>1000VA/600W</li>
+                        <li>8 battery backup outlets</li>
+                        <li>LCD Display</li>
+                        <li>3-year warranty</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ups-card fade-in">
+                <img src="{% static 'images/ups3.jpg' %}" alt="UPS 3" class="ups-img">
+                <div class="ups-details">
+                    <div class="ups-name"><strong>Luminous 800VA UPS</strong></div>
+                    <div class="ups-price"><strong>₹5,999</strong></div>
+                    <ul class="ups-desc">
+                        <li>800VA/480W</li>
+                        <li>5 battery backup outlets</li>
+                        <li>Compact design</li>
+                        <li>2-year warranty</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Row Block End -->
+
+        <!-- Row Block Start -->
+        <div class="ups-row" style="display: flex; gap: 32px; justify-content: center; margin-bottom: 40px;">
+            <div class="ups-card fade-in">
+                <img src="{% static 'images/ups4.jpg' %}" alt="UPS 4" class="ups-img">
+                <div class="ups-details">
+                    <div class="ups-name"><strong>V-Guard 600VA UPS</strong></div>
+                    <div class="ups-price"><strong>₹4,799</strong></div>
+                    <ul class="ups-desc">
+                        <li>600VA/360W</li>
+                        <li>5 battery backup outlets</li>
+                        <li>LED Indicator</li>
+                        <li>2-year warranty</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ups-card fade-in">
+                <img src="{% static 'images/ups5.jpg' %}" alt="UPS 5" class="ups-img">
+                <div class="ups-details">
+                    <div class="ups-name"><strong>Intex 1000VA UPS</strong></div>
+                    <div class="ups-price"><strong>₹6,299</strong></div>
+                    <ul class="ups-desc">
+                        <li>1000VA/600W</li>
+                        <li>8 battery backup outlets</li>
+                        <li>Overload Protection</li>
+                        <li>3-year warranty</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ups-card fade-in">
+                <img src="{% static 'images/ups6.jpg' %}" alt="UPS 6" class="ups-img">
+                <div class="ups-details">
+                    <div class="ups-name"><strong>Numeric 800VA UPS</strong></div>
+                    <div class="ups-price"><strong>₹5,499</strong></div>
+                    <ul class="ups-desc">
+                        <li>800VA/480W</li>
+                        <li>6 battery backup outlets</li>
+                        <li>Compact design</li>
+                        <li>2-year warranty</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Row Block End -->
+
+        <!-- Row Block Start -->
+        <div class="ups-row" style="display: flex; gap: 32px; justify-content: center; margin-bottom: 40px;">
+            <div class="ups-card fade-in">
+                <img src="{% static 'images/ups7.jpg' %}" alt="UPS 7" class="ups-img">
+                <div class="ups-details">
+                    <div class="ups-name"><strong>APC Easy UPS 1200VA</strong></div>
+                    <div class="ups-price"><strong>₹7,999</strong></div>
+                    <ul class="ups-desc">
+                        <li>1200VA/720W</li>
+                        <li>8 battery backup outlets</li>
+                        <li>LCD Display</li>
+                        <li>3-year warranty</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ups-card fade-in">
+                <img src="{% static 'images/ups8.jpg' %}" alt="UPS 8" class="ups-img">
+                <div class="ups-details">
+                    <div class="ups-name"><strong>Microtek 600VA UPS</strong></div>
+                    <div class="ups-price"><strong>₹4,499</strong></div>
+                    <ul class="ups-desc">
+                        <li>600VA/330W</li>
+                        <li>5 battery backup outlets</li>
+                        <li>LED Indicator</li>
+                        <li>2-year warranty</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ups-card fade-in">
+                <img src="{% static 'images/ups9.jpg' %}" alt="UPS 9" class="ups-img">
+                <div class="ups-details">
+                    <div class="ups-name"><strong>Luminous 1000VA UPS</strong></div>
+                    <div class="ups-price"><strong>₹7,499</strong></div>
+                    <ul class="ups-desc">
+                        <li>1000VA/600W</li>
+                        <li>8 battery backup outlets</li>
+                        <li>Automatic Voltage Regulation</li>
+                        <li>3-year warranty</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Row Block End -->
+    </div>
+{% endblock %}

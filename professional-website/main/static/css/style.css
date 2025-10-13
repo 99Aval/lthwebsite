@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+header nav a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding-top: 60px; /* Space for fixed header */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer .contact-form {
+    margin: 20px 0;
+}
+
+footer .logos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .logos img {
+    width: 30px;
+    height: 30px;
+}
+
+.ups-option {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+.ups-option h3 {
+    margin: 0 0 10px;
+}
+
+.ups-option p {
+    margin: 0 0 10px;
+}
+
+.ups-option .price {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #337ba1; /* dark yellow */
+    padding: 10px 30px;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-btn {
+    background: #0a12a4;
+    color: #ffffff;
+    padding: 10px 22px; 
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.nav-btn:hover {
+    background: #FFA000;
+    color: #fff;
+}
+
+/* Add to: c:\Users\avani\Downloads\lth\professional-website\main\static\css\style.css */
+.ups-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.ups-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12), 0 1.5px 4px rgba(0,0,0,0.08);
+    padding: 24px 18px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.ups-card:hover {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.ups-img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 16px;
+}
+
+.ups-name, .ups-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.ups-desc {
+    margin: 0;
+    padding-left: 18px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #042c53 40%, #64b5f6 100%);
+    padding: 18px 0;
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.08);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Remove header background color if present */
+header {
+    background: none;
+}
+
+header h1, header nav a {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(25, 118, 210, 0.18);
+}
+
+button, .btn {
+    background: linear-gradient(90deg, #FFD600 0%, #FFEA00 100%);
+    color: #222;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s, background 0.3s;
+}
+
+button:hover, .btn:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+    transform: translateY(-2px) scale(1.05);
+    background: linear-gradient(90deg, #FFEA00 0%, #FFD600 100%);
+}
+
+.ups-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12), 0 1.5px 4px rgba(0,0,0,0.08);
+    padding: 24px 18px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.ups-card:hover {
+    box-shadow: 0 16px 48px rgba(25, 118, 210, 0.18), 0 4px 16px rgba(0,0,0,0.18);
+    transform: scale(1.04) translateY(-4px);
+    z-index: 2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s, transform 0.7s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: none;
+}

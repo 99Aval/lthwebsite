@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>UPS Options</title>
+</head>
+<body>
+    {% include 'base.html' %}
+    
+    <div class="container">
+        <h1>UPS Options</h1>
+        <div class="ups-options">
+            <div class="ups-option">
+                <h2>Standard Shipping</h2>
+                <p>Delivery within 5-7 business days.</p>
+                <p>Price: $10.00</p>
+            </div>
+            <div class="ups-option">
+                <h2>Express Shipping</h2>
+                <p>Delivery within 2-3 business days.</p>
+                <p>Price: $25.00</p>
+            </div>
+            <div class="ups-option">
+                <h2>Overnight Shipping</h2>
+                <p>Delivery by the next business day.</p>
+                <p>Price: $50.00</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="{% static 'logos/whatsapp.svg' %}" alt="WhatsApp"></a>
+            <a href="#"><img src="{% static 'logos/facebook.svg' %}" alt="Facebook"></a>
+        </div>
+    </footer>
+</body>
+</html>
